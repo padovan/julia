@@ -456,4 +456,22 @@ slide
    }
 }
 
+chapter: "wrapping up";
+slide
+{
+   layout: blank;
+   title: "wrapping up";
+   transition: "fade";
+   custom_area: "center" 0.1 0.3 0.9 0.7;
+   area
+   {
+      name: "center";
+      layout: vertical;
+      items {
+         numbering: none;
+         text: "what to do?";
+      }
+   }
+}
+
 
