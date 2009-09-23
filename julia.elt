@@ -167,6 +167,39 @@ slide
     }
 }
 
+slide
+{
+    layout: blank;
+    title: "pahole";
+    subtitle: "usage";
+
+    transition: "fade";
+
+    custom_area: "center" 0.1 0.2 0.9 0.8;
+    area
+    {
+        name: "center";
+        items
+        {
+            numbering: none;
+            text: "remember to compile using '-g'";
+            text: "gather information:";
+            items
+            {
+                numbering: none;
+                text: "pahole -V binary";
+            }
+            text: "suggest changes:";
+            items
+            {
+                numbering: none;
+                text: "pahole -V -RC struct binary";
+            }
+        }
+    }
+}
+
+
 
 chapter: "gprof";
 slide
