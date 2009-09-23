@@ -190,5 +190,70 @@ slide
             text: "Default output is a set of HTML files";
         }
     }
+}
 
+chapter: "gcov/lcov";
+slide
+{
+   layout: blank;
+   title: "gcov/lcov";
+   subtitle: "gcov";
+   transition: "fade_content";
+   custom_area: "center" 0.1 0.3 0.9 0.7;
+   area
+   {
+      name: "center";
+      layout: vertical;
+      items {
+         numbering: none;
+         text: "how often each line of code executes";
+         text: "what lines of code are actually executed";
+         text: "how much computing time each section of code uses";
+         text: "used to verify the code coverage of your tests";
+      }
+   }
+}
+
+slide
+{
+   layout: blank;
+   title: "gcov/lcov";
+   subtitle: "lcov";
+   transition: "fade_content";
+   custom_area: "center" 0.1 0.3 0.9 0.7;
+   area
+   {
+      name: "center";
+      layout: vertical;
+      items {
+         numbering: none;
+         text: "extension of gcov";
+         text: "set of Perl scripts which builds html output from gcov data";
+         text: "support for large projects";
+      }
+   }
+}
+
+slide
+{
+   layout: blank;
+   title: "gcov/lcov";
+   subtitle: "usage";
+   transition: "fade_content";
+   custom_area: "center" 0.1 0.2 0.9 0.8;
+   area
+   {
+      name: "center";
+      layout: vertical;
+      items {
+         numbering: none;
+         text: "compile your code with <outline>-fprofile-arcs -ftest-coverage</outline>";
+         text: "link it with <outline>-lgcov</outline>";
+         text: "lcov --directory . --zerocounters";
+         text: "run your program/test";
+         text: "mkdir coverage";
+         text: "lcov --directory . --capture --output-file coverage/coverage.info";
+         text: "genhtml -t 'complex_cov' -o coverage coverage/coverage.info";
+      }
+   }
 }
