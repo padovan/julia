@@ -1,0 +1,24 @@
+
+gcc -dM -E -x c /dev/null
+gcc -masm=intel -S -c hello.c
+gcc -masm=att -S -c hello.c
+gcc hello.s -c
+gcc hello.o -o hello
+nm -o hello.o
+readelf -W -x6 hello.o
+readelf -WS hello.o
+readelf -Ws hello.o
+readelf -Wr hello.o
+objdump -rd hello.o
+nm -o hello
+
+"-E"  Stop after the preprocessing stage; do not run the compiler proper. The
+      output is in the form of preprocessed source code, which is sent to
+      the standard output.
+
+"-dM"
+"-fdump-rtl-mach"
+  Dump after performing the machine dependent
+  reorganization pass
+
+"-x c" Arquivo de entrada na linguagem C.
