@@ -35,35 +35,18 @@ slide
     area
     {
         name: "center";
-        layout: 2_columns;
         items {
-           numbering: roman;
-           text: "Luis Felipe";
-              items {
-                 numbering: none;
-                 text: "static analyzer";
-                 text: "oka";
-                 text: "7 dwarves";
-                 text: "gprof/oprof";
-              }
-           text: "Rafael Antognolli";
-           items {
-              numbering: none;
-              text: "gcov";
-              text: "lcov";
-           }
-           text: "Bruno Cardoso";
-           items {
-              numbering: none;
-              text: "gcc";
-           }
-           text: "Gustavo Padovan";
-           items {
-              numbering: none;
-              text: "valgrind";
-              text: "strace";
-              text: "ldd";
-           }
+            numbering: roman;
+            text: "source";
+            text: "static analyzer";
+            text: "7 dwarves";
+            text: "ldd/readelf/objdump";
+            text: "gprof/oprof";
+            text: "valgrind";
+            text: "strace";
+            text: "oka";
+            text: "gcov/lcov";
+            text: "gcc";
         }
     }
 }
