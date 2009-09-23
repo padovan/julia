@@ -1,5 +1,4 @@
  layout: 2_columns_left;
- foot_text: "dev-tools";
  title: "eines de desenvolupament de Linux";
 
 transition: fade_content;
