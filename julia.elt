@@ -382,8 +382,10 @@ slide
         {
             text: "monitor system calls and signals";
             text: "useful to find crashes on your program";
+            text: "shows which libraries and files are being loaded";
             text: "can trace by syscall or group of syscall";
             text: "can be attached to a running process";
+            text: "useful to debug things to which you might not have the source";
         }
     }
 }
