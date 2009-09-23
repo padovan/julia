@@ -351,6 +351,23 @@ slide
 
 }
 
+slide
+{
+    layout: blank;
+    title: "valgrind";
+    subtitle: "callgrind";
+
+    transition: "fade";
+
+    custom_area: "center" 0.1 0.2 0.9 0.8;
+    area
+    {
+        name: "center";
+	image: "kcachegrind.jpg";
+    }
+
+}
+
 
 chapter: "oka";
 slide
@@ -511,6 +528,29 @@ slide
          text: "inspecting functions";
          text: "setting scripts";
          text: "listing code";
+      }
+   }
+}
+
+chapter: "gcc, readelf, objdump, nm";
+
+slide
+{
+   layout: blank;
+   title: "gcc, readelf, objdump, nm";
+   subtitle: "tips";
+   transition: "fade_content";
+   custom_area: "center" 0.1 0.3 0.9 0.7;
+   area
+   {
+      name: "center";
+      layout: vertical;
+      items {
+         numbering: none;
+         text: "Gnu Compiler Collection";
+         text: "readelf - Read elf binaries, showing sections, symbols, ....";
+         text: "objdump - Disasm elf binaries, showing code (bfd-binutils)!!";
+         text: "nm - list symbols from object files";
       }
    }
 }
