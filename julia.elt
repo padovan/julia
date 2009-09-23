@@ -133,6 +133,8 @@ slide
                 text: "Automatic Bug Finding";
             }
             text: "Great way of helping other projects";
+            text: "Simulates execution through different paths";
+            text: "Uses source annotations for information";
         }
     }
 }
