@@ -242,6 +242,30 @@ slide
 
 }
 
+chapter: "valgrind";
+slide
+{
+    layout: blank;
+    title: "valgrind";
+
+    transition_previous: "fade";
+    transition_next: "fade";
+
+    custom_area: "center" 0.1 0.2 0.9 0.8;
+    area
+    {
+        name: "center";
+        items
+        {
+            numbering: none;
+            text: "memory debugging tool";
+            text: "memory leak detection";
+            text: "show invalid memory usage";
+        }
+    }
+
+}
+
 chapter: "oka";
 slide
 {
