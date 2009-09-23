@@ -242,6 +242,29 @@ slide
 
 }
 
+chapter: "oka";
+slide
+{
+    layout: blank;
+    title: "oka";
+
+    transition_previous: "fade";
+    transition_next: "fade_content";
+    custom_area: "center" 0.1 0.2 0.9 0.8;
+
+    area
+    {
+        name: "center";
+        layout: blank;
+        items
+        {
+            text: "Developed at Unicamp";
+            text: "Useful when everything else has gone wrong";
+            text: "Easily portable and blazing fast";
+        }
+    }
+}
+
 chapter: "gcov/lcov";
 slide
 {
