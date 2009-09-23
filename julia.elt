@@ -257,3 +257,29 @@ slide
       }
    }
 }
+
+chapter: "gdb";
+
+slide
+{
+   layout: blank;
+   title: "gdb";
+   subtitle: "tips";
+   transition: "fade_content";
+   custom_area: "center" 0.1 0.3 0.9 0.7;
+   area
+   {
+      name: "center";
+      layout: vertical;
+      items {
+         numbering: none;
+         text: "setting breakpoints";
+         text: "printing variables";
+         text: "executing commands";
+         text: "printing backtrace";
+         text: "inspecting functions";
+         text: "setting scripts";
+         text: "listing code";
+      }
+   }
+}
