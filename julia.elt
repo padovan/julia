@@ -182,14 +182,14 @@ slide
         items
         {
             numbering: none;
-            text: "Compile and install clang";
+            text: "Dynamic Code Analysis";
+            text: "Examines behaviour during execution:";
             items
             {
                 numbering: none;
-                text: "<outline>should</outline> be packaged in the next Ubuntu release";
+                text: "sampling profilers";
+                text: "instrumenting profilers";
             }
-            text: "Use the scan-build script provided to run configure/make/gcc/etc.";
-            text: "Default output is a set of HTML files";
         }
     }
 }
@@ -285,3 +285,39 @@ slide
       }
    }
 }
+
+slide
+{
+    layout: blank;
+    title: "GProf";
+
+    transition_previous: "fade";
+    transition_next: "fade";
+
+    custom_area: "center" 0.1 0.2 0.9 0.8;
+    area
+    {
+        name: "center";
+        items
+        {
+            numbering: none;
+            text: "Part of the binutils project";
+            text: "Needs instrumentation in order to work";
+            items
+            {
+                numbering: none;
+                text: "compile using the -pg flag with gcc";
+            }
+            text: "Might change output due to performance reasons";
+            text: "Running the program will generate a 'gmon.out' file";
+            items
+            {
+                numbering: none;
+                text: "inspect using gprof";
+            }
+        }
+    }
+
+}
+
+
