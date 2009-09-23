@@ -54,6 +54,31 @@ slide
 slide
 {
     layout: blank;
+    title: "Source code";
+
+    transition: "horizontal";
+    custom_area: "center" 0.1 0.2 0.9 0.8;
+    area
+    {
+        name: "center";
+        items
+        {
+            numbering: none;
+            text: "Kind of cliche, but: 'Use the source, Luke!'";
+            items
+            {
+                numbering: none;
+                text: "official project page";
+                text: "distro repositories (apt-get, yumdownloader, etc.)";
+                text: "google";
+            }
+        }
+    }
+}
+
+slide
+{
+    layout: blank;
     title: "Static Analyzers";
     subtitle: "";
 
