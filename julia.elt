@@ -43,6 +43,7 @@ slide
                 text: "official project page";
                 text: "distro repositories (apt-get, yumdownloader, etc.)";
                 text: "google";
+                text: "grep";
             }
         }
     }
