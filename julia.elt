@@ -162,7 +162,18 @@ slide
             {
                 numbering: none;
                 text: "sampling profilers";
+                items
+                {
+                    numbering: none;
+                    text: "oprofile";
+                }
                 text: "instrumenting profilers";
+                items
+                {
+                    numbering: none;
+                    text: "gprof - compiler assisted";
+                    text: "valgrind - runtime instrumentation";
+                }
             }
         }
     }
