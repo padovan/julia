@@ -1,5 +1,5 @@
  layout: 2_columns_left;
- foot_text: "Rafael Antognolli, antognolli@gmail.com";
+ foot_text: "dev-tools";
  title: "eines de desenvolupament de Linux";
 
 transition: fade_content;
@@ -66,4 +66,121 @@ slide
            }
         }
     }
+}
+
+slide
+{
+    layout: blank;
+    title: "Static Analyzers";
+    subtitle: "";
+
+    transition_previous: "horizontal";
+    transition_next: "horizontal";
+
+    custom_area: "center" 0.1 0.2 0.9 0.8;
+    area
+    {
+        name: "center";
+        items
+        {
+            numbering: none;
+            text: "Used to find bugs in code before actually running";
+            text: "Kind of an umbrella term for a collection of algorithms and tools";
+            text: "Helps to find bugs early during development";
+            text: "Useful to find:";
+            items
+            {
+                numbering: none;
+                text: "memory leaks";
+                text: "path-specific bugs";
+                text: "null pointer dereferencing";
+            }
+        }
+    }
+}
+
+slide
+{
+    layout: blank;
+    title: "Clang Static Analyzer";
+    subtitle: "";
+
+    transition_previous: "fade";
+    transition_next: "fade";
+
+    custom_area: "center" 0.1 0.2 0.9 0.8;
+    area
+    {
+        name: "center";
+        items
+        {
+            numbering: none;
+            text: "Part of the LLVM project";
+            text: "Used internally at Apple and officially part of XCode 3.2";
+            text: "100% free software";
+            text: "http://clang.llvm.org";
+            items
+            {
+                numbering: none;
+                text: "Automatic Bug Finding";
+            }
+            text: "Great way of helping other projects";
+        }
+    }
+}
+
+slide
+{
+    layout: blank;
+    title: "Clang Static Analyzer";
+    subtitle: "Usage";
+
+    transition_previous: "fade";
+    transition_next: "fade";
+
+    custom_area: "center" 0.1 0.2 0.9 0.8;
+    area
+    {
+        name: "center";
+        items
+        {
+            numbering: none;
+            text: "Compile and install clang";
+            items
+            {
+                numbering: none;
+                text: "<outline>should</outline> be packaged in the next Ubuntu release";
+            }
+            text: "Use the scan-build script provided to run configure/make/gcc/etc.";
+            text: "Default output is a set of HTML files";
+        }
+    }
+}
+
+slide
+{
+    layout: blank;
+    title: "Code Profiling";
+
+    transition_previous: "fade";
+    transition_next: "fade";
+
+    custom_area: "center" 0.1 0.2 0.9 0.8;
+    area
+    {
+        name: "center";
+        items
+        {
+            numbering: none;
+            text: "Compile and install clang";
+            items
+            {
+                numbering: none;
+                text: "<outline>should</outline> be packaged in the next Ubuntu release";
+            }
+            text: "Use the scan-build script provided to run configure/make/gcc/etc.";
+            text: "Default output is a set of HTML files";
+        }
+    }
+
 }
