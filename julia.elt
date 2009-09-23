@@ -141,6 +141,34 @@ slide
     }
 }
 
+chapter: "7 dwarves";
+
+slide
+{
+    layout: blank;
+    title: "7 dwarves";
+
+    transition: "fade";
+
+    custom_area: "center" 0.1 0.2 0.9 0.8;
+    area
+    {
+        name: "center";
+        items
+        {
+            text: "'debugging information beyond gdb'";
+            text: "Set of tools that use DWARF:";
+            items
+            {
+                text: "pahole for structs";
+                text: "pfunct for functions";
+                text: "codiff to diff dwarf informations between binaries";
+            }
+        }
+    }
+}
+
+
 chapter: "gprof";
 slide
 {
