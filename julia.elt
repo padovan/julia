@@ -311,6 +311,30 @@ slide
     }
 }
 
+chapter: "strace";
+slide
+{
+    layout: blank;
+    title: "strace";
+
+    transition_previous: "fade";
+    transition_next: "fade_content";
+    custom_area: "center" 0.1 0.2 0.9 0.8;
+
+    area
+    {
+        name: "center";
+        layout: blank;
+        items
+        {
+            text: "monitor system calls and signals";
+            text: "useful to find crashes on your program";
+            text: "can trace by syscall or group of syscall";
+            text: "can be attached to a running process";
+        }
+    }
+}
+
 chapter: "gcov/lcov";
 slide
 {
