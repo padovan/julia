@@ -289,6 +289,28 @@ slide
     }
 }
 
+chapter: "ldd";
+slide
+{
+    layout: blank;
+    title: "ldd";
+
+    transition_previous: "fade";
+    transition_next: "fade_content";
+    custom_area: "center" 0.1 0.2 0.9 0.8;
+
+    area
+    {
+        name: "center";
+        layout: blank;
+        items
+        {
+            text: "show the shared library dependencies";
+            text: "you can see the missing dependencies";
+        }
+    }
+}
+
 chapter: "gcov/lcov";
 slide
 {
