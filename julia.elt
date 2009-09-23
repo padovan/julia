@@ -258,6 +258,36 @@ slide
         items
         {
             numbering: none;
+            text: "instrumentation framework for building dynamic analysis tools";
+            text: "uses jit to instrument the code";
+            text: "main tools:";
+            items
+            {
+                text: "memcheck";
+                text: "cachegrind";
+                text: "callgrind";
+                text: "helgrind";
+            }
+        }
+    }
+
+}
+
+slide
+{
+    layout: blank;
+    title: "valgrind";
+    subtitle: "memcheck";
+
+    transition: "fade";
+
+    custom_area: "center" 0.1 0.2 0.9 0.8;
+    area
+    {
+        name: "center";
+        items
+        {
+            numbering: none;
             text: "memory debugging tool";
             text: "memory leak detection";
             text: "show invalid memory usage";
